@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
 import SearchForm from '../components/SearchForm';
-import Results from '../components/Results';
 
 const HomePage: React.FC = () => {
 
@@ -10,7 +9,6 @@ const HomePage: React.FC = () => {
       <Header />
       <main className="container mx-auto py-8 px-4">
         <SearchForm />
-        <Results />
       </main>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import Button from './Button';
+import { Link } from 'react-router-dom';
 
 const dummyResults = [
   { id: 1, title: 'Подорож до Карпат', image: 'https://www.egretta.org/gallery/menu_photos/landscape.jpg', location: 'Україна', type: 'Гори', details: 'Захоплююча подорож до серця Карпат...' },
@@ -19,11 +20,9 @@ const Results: React.FC = () => {
               <h3 className="text-lg font-semibold text-teal-700">{result.title}</h3>
               <p className="text-sm text-teal-600">{result.details}</p>
               <div className="mt-4 space-x-2">
-                {/* <Link to={`/details/${result.id}`}>
-                  
-                </Link> */}
-                <Button>Детальніше</Button>
-                <Button>Забронювати</Button>
+                <Link to={`/route/${result.id}`}>
+                  <Button>Детальніше</Button>
+                </Link>
               </div>
             </div>
           </div>
